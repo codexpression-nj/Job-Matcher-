@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:jobmatch/home.dart';
-import 'package:jobmatch/toppings.dart';
 
 void main() {
   runApp(const MyApp());

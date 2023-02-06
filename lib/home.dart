@@ -1,6 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:jobmatch/data/toppingDataList.dart';
+import 'package:jobmatch/loader.dart';
 import 'package:jobmatch/toppings.dart';
 
 class Home extends StatefulWidget {
@@ -14,7 +16,8 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
+    // double height = MediaQuery.of(context).size.height;
+
     return Stack(children: <Widget>[
       Container(
         decoration: const BoxDecoration(
@@ -57,21 +60,64 @@ class _HomeState extends State<Home> {
               ),
               const Toppings(),
               const SizedBox(height: 20),
-              InkWell(
-                onTap: () {},
-                child: Center(
-                  child: Container(
-                    height: 50.0,
-                    width: width / 1.2,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15.0),
-                        color: Colors.grey.withOpacity(0.3)),
-                    child: const Center(
-                      child: Text('Order'),
-                    ),
+              Row(
+                // CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+
+                children: [
+                  Text(
+                    'R ' + totalAmount.toString(),
+                    style: const TextStyle(
+                        fontWeight: FontWeight.w300, fontSize: 30),
                   ),
-                ),
-              )
+                  const Spacer(),
+                  // ElevatedButton.icon(
+                  //   onPressed: null,
+                  //   label: const Text('Order'),
+                  //   icon: Icon(
+                  //     // <-- Icon
+                  //     Icons.arrow_forward,
+                  //     size: 24.0,
+                  //   ),
+                  // ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => const Loader(),
+                        ),
+                      );
+                    },
+                    child: Center(
+                      child: Container(
+                        height: 50.0,
+                        width: width / 1.5,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15.0),
+                            color: Colors.grey.withOpacity(0.3)),
+                        child: const Center(
+                          child: Text('Order'),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+              // InkWell(
+              //   onTap: () {},
+              //   child: Center(
+              //     child: Container(
+              //       height: 50.0,
+              //       width: width / 1.2,
+              //       decoration: BoxDecoration(
+              //           borderRadius: BorderRadius.circular(15.0),
+              //           color: Colors.grey.withOpacity(0.3)),
+              //       child: const Center(
+              //         child: Text('Order'),
+              //       ),
+              //     ),
+              //   ),
+              // )
             ],
           ),
         ),
