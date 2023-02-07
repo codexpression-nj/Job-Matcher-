@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:jobmatch/data/toppingDataList.dart';
 import 'package:jobmatch/loader.dart';
@@ -55,7 +54,7 @@ class _HomeState extends State<Home> {
                 height: 350,
               ),
               Text(
-                'Adds Ons',
+                'Add Toppings',
                 style: Theme.of(context).textTheme.titleLarge,
               ),
               const Toppings(),
@@ -71,15 +70,6 @@ class _HomeState extends State<Home> {
                         fontWeight: FontWeight.w300, fontSize: 30),
                   ),
                   const Spacer(),
-                  // ElevatedButton.icon(
-                  //   onPressed: null,
-                  //   label: const Text('Order'),
-                  //   icon: Icon(
-                  //     // <-- Icon
-                  //     Icons.arrow_forward,
-                  //     size: 24.0,
-                  //   ),
-                  // ),
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(
@@ -103,21 +93,6 @@ class _HomeState extends State<Home> {
                   )
                 ],
               ),
-              // InkWell(
-              //   onTap: () {},
-              //   child: Center(
-              //     child: Container(
-              //       height: 50.0,
-              //       width: width / 1.2,
-              //       decoration: BoxDecoration(
-              //           borderRadius: BorderRadius.circular(15.0),
-              //           color: Colors.grey.withOpacity(0.3)),
-              //       child: const Center(
-              //         child: Text('Order'),
-              //       ),
-              //     ),
-              //   ),
-              // )
             ],
           ),
         ),

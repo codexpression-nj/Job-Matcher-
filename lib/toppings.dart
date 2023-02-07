@@ -30,7 +30,7 @@ class _ToppingsState extends State<Toppings> {
     return SizedBox(
       height: 170,
       child: Flexible(
-          child: ListView.builder(
+        child: ListView.builder(
         clipBehavior: Clip.none,
         shrinkWrap: true,
         physics: const BouncingScrollPhysics(),
