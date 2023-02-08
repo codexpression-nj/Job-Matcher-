@@ -1,5 +1,5 @@
 // ignore: file_names
-import 'package:jobmatch/model/topingModel.dart';
+import 'package:kota_menu/model/topingModel.dart';
 
 List<Topping> topingAddOns = [
   Topping(title: "Chips", image: 'assets/chips.png', selected: false, price: 6),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jobmatch/home.dart';
+import 'package:kota_menu/home.dart';
 
 void main() {
   runApp(const MyApp());

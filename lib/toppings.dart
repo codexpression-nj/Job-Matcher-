@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jobmatch/data/toppingDataList.dart';
-import 'package:jobmatch/model/topingModel.dart';
+import 'package:kota_menu/data/toppingDataList.dart';
+import 'package:kota_menu/model/topingModel.dart';
 
 class Toppings extends StatefulWidget {
   const Toppings({Key? key}) : super(key: key);
@@ -30,7 +30,7 @@ class _ToppingsState extends State<Toppings> {
     return SizedBox(
       height: 170,
       child: Flexible(
-        child: ListView.builder(
+          child: ListView.builder(
         clipBehavior: Clip.none,
         shrinkWrap: true,
         physics: const BouncingScrollPhysics(),

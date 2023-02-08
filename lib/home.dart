@@ -1,8 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:jobmatch/data/toppingDataList.dart';
-import 'package:jobmatch/loader.dart';
-import 'package:jobmatch/toppings.dart';
+import 'package:kota_menu/data/toppingDataList.dart';
+import 'package:kota_menu/loader.dart';
+import 'package:kota_menu/toppings.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
