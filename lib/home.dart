@@ -1,6 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:kota_menu/data/toppingDataList.dart';
+import 'package:kota_menu/data/topping_data_list.dart';
 import 'package:kota_menu/loader.dart';
 import 'package:kota_menu/toppings.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kota_menu/data/toppingDataList.dart';
-import 'package:kota_menu/model/topingModel.dart';
+import 'package:kota_menu/data/topping_data_list.dart';
+import 'package:kota_menu/model/toping_model.dart';
 
 class Toppings extends StatefulWidget {
   const Toppings({Key? key}) : super(key: key);
